@@ -1708,6 +1708,8 @@ Error OS_OSX::initialize(const VideoMode &p_desired, int p_video_driver, int p_a
 		[NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
 		[NSApp activateIgnoringOtherApps:YES];
 	}
+	
+	[window_object setColorSpace: [NSColorSpace sRGBColorSpace]];
 
 	_update_window();
 
